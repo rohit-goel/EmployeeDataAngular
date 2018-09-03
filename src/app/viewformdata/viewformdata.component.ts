@@ -17,6 +17,7 @@ export class ViewformdataComponent implements OnInit {
   ngOnInit() {
     this,this.formservice.getMethod("getEmpData").subscribe(res => {
       this.employeedata.push(res);
+      this.alldata = JSON.parse(JSON.stringify(this.employeedata));
     },
     error => {
       console.log(error);
