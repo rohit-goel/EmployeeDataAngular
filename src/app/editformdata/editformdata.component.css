@@ -1,0 +1,29 @@
+.invalidity{
+    color: red;
+    background-color: lightpink;
+    padding: 10px;
+    border: 5px;
+    border-color: red;
+    
+}
+
+.form{
+    background-color: lightgrey;
+    margin-left: 35%;
+    width: 30%;
+    margin-bottom: 100px;
+    padding: 30px;
+
+}
+
+.imputfield{
+    width: 100%;
+    background-color: lightcyan;
+    height: 30px;
+}
+
+
+#imputfield{
+    width: 100%;
+    background-color: lightcyan;
+}
