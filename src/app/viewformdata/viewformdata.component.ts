@@ -9,20 +9,20 @@ import { FormserviceService } from '../formservice.service';
 })
 
 export class ViewformdataComponent implements OnInit {
-  show:any;
-  employeedata:any=[];
-  alldata:any=[];
+  show: any;
+  employeedata: any;
   constructor(private formservice: FormserviceService, private routes: Router) {
+    this.formservice.getMethod("getEmpData").subscribe(res => {
+      this.employeedata = res;
+
+    },
+      error => {
+        console.log(error);
+      });
+
   }
   ngOnInit() {
-    this,this.formservice.getMethod("getEmpData").subscribe(res => {
-      this.employeedata.push(res);
-      this.alldata = JSON.parse(JSON.stringify(this.employeedata));
-    },
-    error => {
-      console.log(error);
-    });
-    
+
   }
 
   backtoedit() {

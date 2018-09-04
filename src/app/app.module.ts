@@ -10,15 +10,15 @@ import { FormserviceService } from './formservice.service';
 import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
   {
-    path: 'viewdata', 
+    path: 'viewdata',
     component: ViewformdataComponent
   },
   {
-    path: 'editdata', 
+    path: 'editdata',
     component: EditformdataComponent
   },
   {
-    path: '', 
+    path: '',
     component: EditformdataComponent
   }
 ]

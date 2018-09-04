@@ -14,7 +14,8 @@
       </label>
       <br />
       <input class="imputfield" type="text" placeholder="First Name" formControlName="firstName">
-      <div class="invalidity" *ngIf="loginForm.controls['firstName'].dirty && !loginForm.controls['firstName'].valid">Please Enter the First Name having at least two alphabets.</div>
+      <div class="invalidity" *ngIf="loginForm.controls['firstName'].dirty && !loginForm.controls['firstName'].valid">Please
+        Enter the First Name having at least two alphabets.</div>
       <br />
       <br />
       <label>
@@ -22,7 +23,8 @@
       </label>
       <br />
       <input class="imputfield" type="text" placeholder="Last Name" formControlName="lastName">
-      <div class="invalidity" *ngIf="loginForm.controls['lastName'].dirty && !loginForm.controls['lastName'].valid">Please Enter Valid Name having at least 4 alphabets</div>
+      <div class="invalidity" *ngIf="loginForm.controls['lastName'].dirty && !loginForm.controls['lastName'].valid">Please
+        Enter Valid Name having at least 4 alphabets</div>
       <br />
       <br />
       <label>
@@ -30,7 +32,8 @@
       </label>
       <br />
       <input class="imputfield" type="text" placeholder="Email Id" formControlName="emailId">
-      <div class="invalidity" *ngIf="loginForm.controls['emailId'].dirty && !loginForm.controls['emailId'].valid">Invalid Email</div>
+      <div class="invalidity" *ngIf="loginForm.controls['emailId'].dirty && !loginForm.controls['emailId'].valid">Invalid
+        Email</div>
       <br />
       <br />
       <label>
@@ -38,7 +41,8 @@
       </label>
       <br />
       <input class="imputfield" type="text" placeholder="Contact No." formControlName="phoneNo">
-      <div class="invalidity" *ngIf="loginForm.controls['phoneNo'].dirty && !loginForm.controls['phoneNo'].valid">Enter 10 digit Contact number</div>
+      <div class="invalidity" *ngIf="loginForm.controls['phoneNo'].dirty && !loginForm.controls['phoneNo'].valid">Enter
+        10 digit Contact number</div>
       <br />
       <br />
       <label>
@@ -47,7 +51,8 @@
       <br />
       <input class="imputfield" [type]="pass" placeholder="Enter Password" formControlName="password" maxlength="16">
       <span class="fa fa-eye" *ngIf="loginForm.controls['password'].touched" (mouseup)="hidepass()" (mousedown)="showpass()"></span>
-      <div class="invalidity" *ngIf="loginForm.controls['password'].dirty && !loginForm.controls['password'].valid">Contains at least min length 8 in which 1 digit, 1 uppercase, 1 lowercase and 1 special character</div>
+      <div class="invalidity" *ngIf="loginForm.controls['password'].dirty && !loginForm.controls['password'].valid">Contains
+        at least min length 8 in which 1 digit, 1 uppercase, 1 lowercase and 1 special character</div>
       <br />
       <br />
       <label>
@@ -55,7 +60,8 @@
       </label>
       <br />
       <input class="imputfield" type="text" placeholder="Gender" formControlName="gender" maxlength="1">
-      <div class="invalidity" *ngIf="loginForm.controls['gender'].touched && !loginForm.controls['gender'].valid">Enter gender as: M/F/O/m/f/o</div>
+      <div class="invalidity" *ngIf="loginForm.controls['gender'].touched && !loginForm.controls['gender'].valid">Enter
+        gender as: M/F/O/m/f/o</div>
       <br />
       <br />
       <label>
@@ -63,7 +69,8 @@
       </label>
       <br />
       <input class="imputfield" type="text" placeholder="EMP ID" formControlName="empId">
-      <div class="invalidity" *ngIf="loginForm.controls['empId'].touched && !loginForm.controls['empId'].valid">Enter Valid Employee id</div>
+      <div class="invalidity" *ngIf="loginForm.controls['empId'].touched && !loginForm.controls['empId'].valid">Enter
+        Valid Employee id</div>
       <br />
       <br />
       <input type="submit" [disabled]="!loginForm.valid">
